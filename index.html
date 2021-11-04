@@ -111,7 +111,8 @@
         <div class="my-input d-flex align-items-center justify-content-between p-3">
 
           <i class="far fa-smile mx-2"></i>
-          <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+          <input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model="messaggio"
+            v-on:keyup.enter="onChatEnter(messaggio)">
           <i class="fas fa-microphone mx-2"></i>
 
         </div>

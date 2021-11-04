@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     el: "#root",
     data: {
       activeUser: 0,
+      messaggio: "",
       contacts: [
         {
           name: 'Michele',
@@ -95,11 +96,11 @@ window.addEventListener("DOMContentLoaded", () => {
     methods: {
       onChatClick(contact) {
         this.activeUser = contact;
-        /* console.log(this.activeUser); */
+      },
+      onChatEnter(messaggio) {
+        console.log(messaggio);
+        this.contacts[0].message.push(messaggio);
       }
-    },
-    created() {
-      this.activeUsers = this.contacts[0];
     }
 
   });
