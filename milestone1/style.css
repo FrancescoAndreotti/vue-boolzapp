@@ -1,0 +1,112 @@
+.ext-bg{
+  background-color: #d9dbd4;
+  height: 100vh;
+  width: 100%;
+}
+
+.ext-bg-top{
+  background-color: #009588;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.app{
+  width: 80%;
+  height: 95%;
+  position: absolute;
+  top: 2.5%;
+  background-color: aqua;
+  display: flex;
+}
+
+
+/* left column */
+.left-column{
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefffe
+  ;
+}
+
+
+.nav-utente{
+  height: 70px;
+  width: 100%;
+  background-color: #e9eaea;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav-avatar{
+  width: 15%;
+  border-radius: 50%;
+}
+
+.notifiche{
+  background-color: #8ed9fc;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.notifiche p, .notifiche span{
+  margin: 0;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.bell-icon{
+  color: #8ed9fc;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.filter-container{
+  padding: 8px;
+  height: 50px;
+  color: #b8bbbd;
+}
+
+.filter{
+  width: 100%;
+  border: 1px solid rgb(233, 241, 241);
+}
+
+.chat-avatar{
+  width: 15%;
+  border-radius: 50%
+}
+
+.message{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.chat-container{
+  width: 97%;
+  
+}
+
+/* right column */
+
+.right-column{
+  width: 65%;
+}
+
+.right-nav-avatar{
+  width: 10%;
+}
