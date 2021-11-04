@@ -17,7 +17,6 @@
   height: 95%;
   position: absolute;
   top: 2.5%;
-  background-color: aqua;
   display: flex;
 }
 
@@ -101,12 +100,61 @@
   
 }
 
+.submessage{
+  font-size: 12px;
+}
+
 /* right column */
 
 .right-column{
   width: 65%;
+  position: relative;
+}
+
+.message-container{
+  background-image: url(../img/mine.jpg);
+  height: 80%;
+  width: 100%;
+  padding: 50px;
+  
+  
 }
 
 .right-nav-avatar{
   width: 10%;
+}
+
+.my-input{
+  height: 70px;
+  width: 100%;
+  background-color: #f3ede9;
+  position: absolute;
+  bottom: 0;
+}
+
+.sent{
+  background-color: #d4f9b9;
+  min-height: 50px;
+  min-width: 200px;
+  max-width: 200px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 500;
+  border-radius: 10px;
+  
+}
+
+.received{
+  background-color: #fafafa;
+  min-height: 50px;
+  min-width: 200px;
+  max-width: 200px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 500;
+  border-radius: 10px;
 }

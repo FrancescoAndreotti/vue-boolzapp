@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   new Vue({
     el: "#root",
     data: {
-      activeUser: {},
+      activeUser: 0,
       contacts: [
         {
           name: 'Michele',
@@ -95,8 +95,12 @@ window.addEventListener("DOMContentLoaded", () => {
     methods: {
       onChatClick(contact) {
         this.activeUser = contact;
-        console.log(this.activeUser);
+        /* console.log(this.activeUser); */
       }
+    },
+    created() {
+      this.activeUsers = this.contacts[0];
     }
+
   });
 });
