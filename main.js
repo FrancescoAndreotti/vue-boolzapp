@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     data: {
       activeUser: 0,
       messaggio: "",
+      filterText: "",
       contacts: [
         {
           name: 'Michele',
@@ -112,6 +113,14 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 1000);
 
         this.messaggio = "";
+      },
+      getFilteredChat(filterText) {
+        if (!filterText) {
+          return this.contacts;
+        };
+        return this.contacts.filter((contact) => {
+          return contact.name.toLowerCase().includes(this.filterText.toLowerCase().trim());
+        });
       }
     }
 

@@ -142,7 +142,7 @@
   flex-wrap: wrap;
   font-weight: 500;
   border-radius: 10px;
-  
+  position: relative
 }
 
 .received{
@@ -156,4 +156,13 @@
   flex-wrap: wrap;
   font-weight: 500;
   border-radius: 10px;
+  position: relative;
+}
+
+.data{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  font-size: 10px;
+  color: rgb(159, 161, 161);
 }
