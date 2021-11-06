@@ -101,13 +101,13 @@ window.addEventListener("DOMContentLoaded", () => {
       onChatEnter(messaggio, activeUser) {
         this.contacts[activeUser].messages.push({
           text: messaggio,
-          date: new Date().toDateString(),
+          date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
           status: "sent"
         });
         setTimeout(() => {
           this.contacts[activeUser].messages.push({
             text: "Ok",
-            date: new Date().toDateString(),
+            date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
             status: "received"
           });
         }, 1000);
