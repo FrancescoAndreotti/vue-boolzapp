@@ -97,9 +97,21 @@ window.addEventListener("DOMContentLoaded", () => {
       onChatClick(contact) {
         this.activeUser = contact;
       },
-      onChatEnter(messaggio) {
-        console.log(messaggio);
-        this.contacts[0].message.push(messaggio);
+      onChatEnter(messaggio, activeUser) {
+        this.contacts[activeUser].messages.push({
+          text: messaggio,
+          date: new Date().toDateString(),
+          status: "sent"
+        });
+        setTimeout(() => {
+          this.contacts[activeUser].messages.push({
+            text: "Ok",
+            date: new Date().toDateString(),
+            status: "received"
+          });
+        }, 1000);
+
+        this.messaggio = "";
       }
     }
 

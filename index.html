@@ -112,7 +112,7 @@
 
           <i class="far fa-smile mx-2"></i>
           <input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model="messaggio"
-            v-on:keyup.enter="onChatEnter(messaggio)">
+            v-on:keyup.enter="onChatEnter(messaggio, activeUser)">
           <i class="fas fa-microphone mx-2"></i>
 
         </div>
