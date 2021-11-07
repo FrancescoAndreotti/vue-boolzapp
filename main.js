@@ -119,7 +119,7 @@ window.addEventListener("DOMContentLoaded", () => {
           return this.contacts;
         };
         return this.contacts.filter((contact) => {
-          return contact.name.toLowerCase().includes(this.filterText.toLowerCase().trim());
+          return contact.name.toLowerCase().includes(this.filterText.toLowerCase());
         });
       }
     }
